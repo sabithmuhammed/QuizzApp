@@ -23,6 +23,8 @@ body {
   align-items: center;
   justify-content: center;
   background-color: white;
+  border-radius: 10px;
+  position: relative;
 }
 
 .start--quizz {
@@ -57,6 +59,7 @@ body {
   justify-content:space-around;
   width: 650px;
   height: 550px;
+
   
   /* border: 3px solid black; */
 
@@ -83,12 +86,17 @@ body {
 }
 .answers{
   border: 2px solid blue;
-  border-radius: 8px;
+  border-radius: 15px;
   margin-right: 10px;
   border: 2px solid #4D5B9E;
-  padding: 1px 10px ;
+  padding: 5px 10px ;
+  min-width: 100px;
   cursor: pointer;
   color: #293264;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 hr{
   opacity: 0.4;
@@ -107,4 +115,11 @@ input{
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+.loading{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  color: #293264;
 }
